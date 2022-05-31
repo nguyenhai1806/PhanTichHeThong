@@ -1,0 +1,12 @@
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\BLL.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\BLL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\DAL.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\DTO.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\DAL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\DTO.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\DTO.dll.config
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.pdb
