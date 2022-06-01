@@ -10,3 +10,6 @@ D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CoreCompileI
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.dll
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Template\Bieu_Mau_Bien_Nhan_HS.doc
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Aspose.Words.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Template\BieuMauXacNhanNhapHoc.doc
