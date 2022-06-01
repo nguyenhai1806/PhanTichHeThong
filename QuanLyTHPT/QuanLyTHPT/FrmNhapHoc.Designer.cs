@@ -307,6 +307,7 @@ namespace QuanLyTHPT
             this.btnInPhieuBienNhan.TabIndex = 1;
             this.btnInPhieuBienNhan.Text = "In phiếu biên nhận hồ sơ";
             this.btnInPhieuBienNhan.UseVisualStyleBackColor = true;
+            this.btnInPhieuBienNhan.Click += new System.EventHandler(this.btnInPhieuBienNhan_Click);
             // 
             // btnInGiayXacNhan
             // 
@@ -318,6 +319,7 @@ namespace QuanLyTHPT
             this.btnInGiayXacNhan.TabIndex = 0;
             this.btnInGiayXacNhan.Text = "In giấy xác nhận nhập học";
             this.btnInGiayXacNhan.UseVisualStyleBackColor = true;
+            this.btnInGiayXacNhan.Click += new System.EventHandler(this.btnInGiayXacNhan_Click);
             // 
             // frmNhapHoc
             // 

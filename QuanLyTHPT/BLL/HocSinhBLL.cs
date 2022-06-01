@@ -56,6 +56,7 @@ namespace BLL
                 }
                 maHS.Sort();
                 int max = (int) maHS.Max();
+                max = max + 1;
                 int lengthMax = max.ToString().Length;
                 string result = "HS";
                 for (int i = 0; i < 3 - lengthMax; i++)
@@ -75,6 +76,10 @@ namespace BLL
             hocSinh.DiaChi = dSTrungTuyen.DiaChi;
             hocSinh.SoDienThoai = dSTrungTuyen.SoDienThoai;
             return hocSinh;
+        }
+        public bool ThemHocSinh(HOCSINH hocSinh)
+        {
+            return HocSinhDAL.Instance.ThemHocSinh(hocSinh);
         }
     }
 }

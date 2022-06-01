@@ -203,5 +203,55 @@ namespace QuanLyTHPT
                 e.Handled = true;
             }
         }
+
+        private void btnInPhieuBienNhan_Click(object sender, EventArgs e)
+        {
+            List<HoSo_PP> hoSo_s = new List<HoSo_PP>();
+            for (int i = 0; i < dataGridView.RowCount; i++)
+            {
+                int soLuong = int.Parse(dataGridView.Rows[i].Cells[3].Value.ToString());
+                if (soLuong != 0)
+                {
+                    HoSo_PP hoSo_PP = new HoSo_PP();
+                    hoSo_PP.maHoSo = dataGridView.Rows[i].Cells[0].Value.ToString();
+                    hoSo_PP.tenHS = dataGridView.Rows[i].Cells[1].Value.ToString();
+                    hoSo_PP.soLuongGhiNhan = int.Parse(dataGridView.Rows[i].Cells[3].Value.ToString());
+                    hoSo_PP.ghiChu = dataGridView.Rows[i].Cells[4].Value.ToString();
+                    hoSo_s.Add(hoSo_PP);
+                }
+            }
+            if (PhieuBienNhanHoSoBLL.Instance.ThemPhieuBienNhan(hocSinh, nhanVien, hoSo_s))
+            {
+                Export export = new Export();
+                export.XuatBienNhanHoSo(hocSinh, nhanVien, hoSo_s);
+            }
+            else
+                MyMessageBox.ShowError("Loi them phieu bien nhan");
+        }
+
+        private void btnInGiayXacNhan_Click(object sender, EventArgs e)
+        {
+            if (HocSinhBLL.Instance.ThemHocSinh(hocSinh))
+            {
+                if (GiayXacNhanNhapHocBLL.Instance.LuuGiayXacNhan(hocSinh, nhanVien))
+                {
+                    MyMessageBox.ShowInformation("Luu thong cong");
+                    Export export = new Export();
+                    export.InGiayXacNhanNhapHoc(hocSinh, nhanVien, "Khối 10", hocSinh.MaHS, hocSinh.MaHS, "Nam");
+                    btnInPhieuBienNhan.Enabled = true;
+                }
+                else
+                {
+                    btnInPhieuBienNhan.Enabled = false;
+                    MyMessageBox.ShowError("Loi them phieu nhap hoc");
+                }
+            }
+            else
+            {
+                btnInPhieuBienNhan.Enabled = false;
+                MyMessageBox.ShowError("Loi them hoc sinh");
+            }    
+                
+        }
     }
 }

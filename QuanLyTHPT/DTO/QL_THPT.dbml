@@ -38,6 +38,15 @@
       <Association Name="NhanVien_GiaoVien" Member="NhanVien" ThisKey="MaNV" OtherKey="MaNV" Type="NhanVien" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.GiayXacNhanNhapHoc" Member="GiayXacNhanNhapHocs">
+    <Type Name="GiayXacNhanNhapHoc">
+      <Column Name="MaHS" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNV" Type="System.String" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayLap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="HOCSINH_GiayXacNhanNhapHoc" Member="HOCSINH" ThisKey="MaHS" OtherKey="MaHS" Type="HOCSINH" IsForeignKey="true" />
+      <Association Name="NhanVien_GiayXacNhanNhapHoc" Member="NhanVien" ThisKey="MaNV" OtherKey="MaNV" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.HanhKiem" Member="HanhKiems">
     <Type Name="HanhKiem">
       <Column Name="MaHanhKiem" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -85,6 +94,7 @@
       <Column Name="CCCD" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
       <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="SoDienThoai" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Association Name="HOCSINH_GiayXacNhanNhapHoc" Member="GiayXacNhanNhapHoc" ThisKey="MaHS" OtherKey="MaHS" Type="GiayXacNhanNhapHoc" Cardinality="One" />
       <Association Name="HOCSINH_HoaDon" Member="HoaDons" ThisKey="MaHS" OtherKey="MaHS" Type="HoaDon" />
       <Association Name="HOCSINH_HocSinh_LopHoc" Member="HocSinh_LopHocs" ThisKey="MaHS" OtherKey="MaHS" Type="HocSinh_LopHoc" />
       <Association Name="HOCSINH_KetQua" Member="KetQuas" ThisKey="MaHS" OtherKey="MaHS" Type="KetQua" />
@@ -204,6 +214,7 @@
       <Column Name="MaLoai" Type="System.String" DbType="Char(10)" CanBeNull="true" />
       <Association Name="NhanVien_TaiKhoan" Member="TaiKhoans" ThisKey="MaNV" OtherKey="MaNV" Type="TaiKhoan" />
       <Association Name="NhanVien_GiaoVien" Member="GiaoVien" ThisKey="MaNV" OtherKey="MaNV" Type="GiaoVien" Cardinality="One" />
+      <Association Name="NhanVien_GiayXacNhanNhapHoc" Member="GiayXacNhanNhapHocs" ThisKey="MaNV" OtherKey="MaNV" Type="GiayXacNhanNhapHoc" />
       <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="MaNV" OtherKey="MaHocPhi" Type="HoaDon" />
       <Association Name="NhanVien_HoaDon1" Member="HoaDons1" ThisKey="MaNV" OtherKey="MaNV" Type="HoaDon" />
       <Association Name="NhanVien_PhieuBienNhanH" Member="PhieuBienNhanHs" ThisKey="MaNV" OtherKey="MaNV" Type="PhieuBienNhanH" />

@@ -4,3 +4,4 @@ D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DTO\bin\Debug\DTO.pdb
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.dll
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache

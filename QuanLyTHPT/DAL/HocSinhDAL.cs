@@ -33,5 +33,18 @@ namespace DAL
         {
             return dataContext.HOCSINHs.ToList<HOCSINH>();
         }
+        public bool ThemHocSinh(HOCSINH hocSinh)
+        {
+            try
+            {
+                dataContext.HOCSINHs.InsertOnSubmit(hocSinh);
+                dataContext.SubmitChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

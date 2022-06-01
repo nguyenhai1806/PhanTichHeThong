@@ -18,3 +18,6 @@ D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.frmNh
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.frmDanhSachUngTuyen.resources
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\DAL.dll
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\DAL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Template\Bieu_Mau_Bien_Nhan_HS.doc
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Aspose.Words.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Template\BieuMauXacNhanNhapHoc.doc
