@@ -8,7 +8,13 @@ namespace DTO
 {
     public class HoSo_PP
     {
-        public string maHoSo, tenHS, ghiChu;
-        public int soLuongGhiNhan, soLuongToiDan;
+        private string maHoSo, tenHS, ghiChu;
+        private int soLuongGhiNhan, soLuongToiDan;
+
+        public string MaHoSo { get => maHoSo; set => maHoSo = value; }
+        public string TenHS { get => tenHS; set => tenHS = value; }
+        public string GhiChu { get => ghiChu; set => ghiChu = value; }
+        public int SoLuongGhiNhan { get => soLuongGhiNhan; set => soLuongGhiNhan = value; }
+        public int SoLuongToiDan { get => soLuongToiDan; set => soLuongToiDan = value; }
     }
 }

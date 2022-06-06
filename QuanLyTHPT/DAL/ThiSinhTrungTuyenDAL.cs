@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,13 @@ namespace DAL
         public List<DSTrungTuyen> layDSTrungTuyen()
         {
             return dataContext.DSTrungTuyens.ToList<DSTrungTuyen>();
+        }
+        public List<DSTrungTuyen> TimDSTrungTuyens(string value)
+        {
+            return (
+                    from ts in dataContext.DSTrungTuyens
+                    where SqlMethods.Like(ts.TenTS, "%" + value + "%") || SqlMethods.Like(ts.SoDienThoai, "%" + value + "%") || SqlMethods.Like(ts.MaTS, "%" + value + "%") || SqlMethods.Like(ts.CCCD, "%" + value + "%")
+                    select ts).ToList<DSTrungTuyen>();    
         }
     }
 }

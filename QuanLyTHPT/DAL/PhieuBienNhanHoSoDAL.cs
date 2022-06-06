@@ -75,9 +75,9 @@ namespace DAL
                 {
                     CTPhieuBienNhanH cTPhieuBienNhan = new CTPhieuBienNhanH();
                     cTPhieuBienNhan.MaPhieuBN = phieu.MaPhieu;
-                    cTPhieuBienNhan.MaHoSo = item.maHoSo;
-                    cTPhieuBienNhan.GhiChu = item.ghiChu;
-                    cTPhieuBienNhan.SoLuong = item.soLuongGhiNhan;
+                    cTPhieuBienNhan.MaHoSo = item.MaHoSo;
+                    cTPhieuBienNhan.GhiChu = item.GhiChu;
+                    cTPhieuBienNhan.SoLuong = item.SoLuongGhiNhan;
                     dataContext.CTPhieuBienNhanHs.InsertOnSubmit(cTPhieuBienNhan);
                 }
                 dataContext.SubmitChanges();

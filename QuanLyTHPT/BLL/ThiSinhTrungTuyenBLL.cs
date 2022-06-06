@@ -37,9 +37,9 @@ namespace BLL
         {
             return ThiSinhTrungTuyenDAL.Instance.layDSTrungTuyen();
         }
-        public List<DSTrungTuyen> TimDSTrungTuyens(List<DSTrungTuyen> dSTrungTuyens,string value)
+        public List<DSTrungTuyen> TimDSTrungTuyens(string value)
         {
-            return dSTrungTuyens.Where(ts => ts.MaTS.Contains(value) || ts.TenTS.Contains(value) || ts.SoDienThoai.Contains(value) || ts.CCCD.Contains(value)).ToList<DSTrungTuyen>();
+            return ThiSinhTrungTuyenDAL.Instance.TimDSTrungTuyens(value);
         }
     }
 }

@@ -33,11 +33,11 @@ namespace DAL
             return (from hs in dataContext.HoSos
                     select new HoSo_PP
                     {
-                        maHoSo = hs.MaHoSo,
-                        tenHS = hs.TenHoSo,
-                        soLuongToiDan = (int)hs.SoLuongToiDa,
-                        soLuongGhiNhan = 0,
-                        ghiChu = hs.GhiChu,
+                        MaHoSo = hs.MaHoSo,
+                        TenHS = hs.TenHoSo,
+                        SoLuongToiDan = (int)hs.SoLuongToiDa,
+                        SoLuongGhiNhan = 0,
+                        GhiChu = hs.GhiChu,
                     }).ToList();
         }
     }

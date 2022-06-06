@@ -30,9 +30,9 @@ namespace BLL
             for (int i = 1; i <= hoSo_s.Count; i++)
             {
                 bangHoSo.PutValue(hangHienTai, 0, i.ToString());//Cột STT
-                bangHoSo.PutValue(hangHienTai, 1, hoSo_s[i - 1].tenHS);//Cột Họ và tên
-                bangHoSo.PutValue(hangHienTai, 2, hoSo_s[i - 1].soLuongGhiNhan.ToString());//Cột quan hệ
-                bangHoSo.PutValue(hangHienTai, 3, hoSo_s[i - 1].ghiChu);//Cột Số điện thoại
+                bangHoSo.PutValue(hangHienTai, 1, hoSo_s[i - 1].TenHS);//Cột Họ và tên
+                bangHoSo.PutValue(hangHienTai, 2, hoSo_s[i - 1].SoLuongGhiNhan.ToString());//Cột quan hệ
+                bangHoSo.PutValue(hangHienTai, 3, hoSo_s[i - 1].GhiChu);//Cột Số điện thoại
                 hangHienTai++;
             }
 

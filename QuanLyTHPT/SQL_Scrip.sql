@@ -1,5 +1,5 @@
-﻿-- CREATE DATABASE QLHOCSINH
--- GO
+﻿ --CREATE DATABASE QLHOCSINH
+ --GO
 
 USE QLHOCSINH
 GO
@@ -16,7 +16,9 @@ CREATE TABLE DSTrungTuyen
 	MaTS CHAR(10) PRIMARY KEY,
 	TenTS NVARCHAR(50) NOT NULL,
 	CCCD CHAR(12) NOT NULL UNIQUE,
-	DiaChi NVARCHAR(50),
+	DiaChi NVARCHAR(MAX),
+	NgaySinh DATE NOT NULL,
+	GioiTinh BIT NOT NULL,
 	SoDienThoai CHAR(10) UNIQUE
 )
 CREATE TABLE LoaiNhanVien
@@ -35,7 +37,9 @@ CREATE TABLE HOCSINH
     MaHS CHAR(10) PRIMARY KEY,
     TenHS NVARCHAR(50) NOT NULL,
     CCCD CHAR(12) NOT NULL UNIQUE,
-    DiaChi NVARCHAR(50),
+	DiaChi NVARCHAR(MAX),
+	NgaySinh DATE NOT NULL,
+	GioiTinh BIT NOT NULL,
     SoDienThoai CHAR(10) UNIQUE,
 )
 CREATE TABLE PhieuBienNhanHS
@@ -171,18 +175,19 @@ CREATE TABLE GiayXacNhanNhapHoc
 	MaNV CHAR(10) NOT NULL FOREIGN KEY REFERENCES dbo.NhanVien(MaNV),
 	NgayLap DATE DEFAULT GETDATE(),
 )
-
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS001', N'Đỗ Ngọc Hương An', '578654748137', N'TP.HổChíMinh', '0911825967' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS002', N'Lê Mỹ An', '489986894711', N'Bạc Liêu', '0911825969' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS003', N'Lê Trương Thúy An', '691641972616', N'Hà Nôi', '0911825971' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS004', N'Lư Tiến An', '353428587428', N'', '0911825973' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS005', N'Lưu Văn An', '485487646617', N'Thanh Hoá', '0911828888' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS006', N'Võ Ngọc Hoài An', '834428248254', N'TP- Huế', '0911182597' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS007', N'Võ Thị Mỹ An', '251249414765', N'Tiền Giang', '0913182459' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS008', N'Đỗ Thị Hồng Thắm', '833001180848', N'Tiền Giang', '0898662163' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS009', N'Lê Minh Khánh', '832001170023', N'Thanh Hoá', '0707058253' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS010', N'Phạm Thanh Hùng', '833001181729', N'Thanh Hoá', '0934158469' )
-INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, SoDienThoai ) VALUES ( 'TS011', N'Nguyễn Tấn Đạt', '832001160650', N'Tiền Giang', '0835233637' )
+SET DATEFORMAT DMY
+GO
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS001', N'Đỗ Ngọc Hương An', '578654748137', N'100 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định','12/03/2008',0, '0911825967' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS002', N'Lê Mỹ An', '489986894711', N'232 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định','15/03/2008',0, '0911825969' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS003', N'Lê Trương Thúy An', '691641972616', N'243 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định','16/02/2008',0, '0911825971' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS004', N'Lư Tiến An', '353428587428', N'100 Lạc Long Quân, Phường Trần Quang Diệu, Thành phố Quy Nhơn, Tỉnh Bình Định','16/04/2008',1, '0911825973' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS005', N'Lưu Văn An', '485487646617', N'34 Hồ Đắc Mậu, Phường Bùi Thị Xuân, Thành phố Quy Nhơn, Tỉnh Bình Định','17/05/2008',1, '0911828888' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS006', N'Võ Ngọc Hoài An', '834428248254', N'33 Huỳnh Văn Nghĩa, Phường Bùi Thị Xuân, Thành phố Quy Nhơn, Tỉnh Bình Định','17/05/2008',0, '0911182597' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS007', N'Võ Thị Mỹ An', '251249414765', N'222 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định','7/9/2008',0, '0913182459' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS008', N'Đỗ Thị Hồng Thắm', '833001180848', N'76 Quang Trung, Phường Bùi Thị Xuân, Thành phố Quy Nhơn, Tỉnh Bình Định','19/9/2008',0, '0898662163' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS009', N'Lê Minh Khánh', '832001170023', N'198 Huỳnh Văn Nghĩa, Phường Bùi Thị Xuân, Thành phố Quy Nhơn, Tỉnh Bình Định','19/10/2008',1, '0707058253' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS010', N'Phạm Thanh Hùng', '833001181729', N'77 Quang Trung, Phường Bùi Thị Xuân, Thành phố Quy Nhơn, Tỉnh Bình Định','19/9/2008',1, '0934158469' )
+INSERT INTO dbo.DSTrungTuyen ( MaTS, TenTS, CCCD, DiaChi, NgaySinh, GioiTinh, SoDienThoai ) VALUES ( 'TS011', N'Nguyễn Tấn Đạt', '832001160650', N'432 Lạc Long Quân, Phường Trần Quang Diệu, Thành phố Quy Nhơn, Tỉnh Bình Định','15/9/2008',1, '0835233637' )
 
 INSERT INTO dbo.LoaiNhanVien( MaLoai, TenLoai )VALUES( 'LNV001', N'Tài chính' )
 INSERT INTO dbo.LoaiNhanVien( MaLoai, TenLoai )VALUES( 'LNV002', N'Giáo vụ' )
@@ -193,14 +198,6 @@ INSERT INTO dbo.NhanVien( MaNV, TenNV, MaLoai )VALUES( 'NV002', N'Nguyễn Thị
 INSERT INTO dbo.NhanVien( MaNV, TenNV, MaLoai )VALUES( 'NV003', N'Huỳnh Văn Kiên', 'LNV003' )
 INSERT INTO dbo.NhanVien( MaNV, TenNV, MaLoai )VALUES( 'NV004', N'Mai Kiến Văn', 'LNV003' )
 INSERT INTO dbo.NhanVien( MaNV, TenNV, MaLoai )VALUES( 'NV005', N'Nguyễn Duy Hải', 'LNV002' )
-
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS001', N'Bùi Mạnh Quốc Huy', '578659948137', N'Tiền Giang', '0913062042' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS002', N'Lê Thị Mai', '489956894711', N'TP- Huế', '0911825969' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS003', N'Trần Kim Ngọc', '353428584728', N'TP- Huế', '0243382452' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS004', N'Lai Như Quỳnh', '353468584728', N'Tiền Giang', '0243833065' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS005', N'Đặng Ngọc Thanh Loan', '834448248254', N'Hà Nôi', '0199852689' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS006', N'Phạm Đoàn Minh Hiếu', '251233414765', N'TP- Huế', '0989852689' )
-INSERT INTO dbo.HOCSINH( MaHS, TenHS, CCCD, DiaChi, SoDienThoai )VALUES( 'HS007', N'Cao Ngọc Phương Trinh', '485237664617', N'Tiền Giang', '0982770056' )
 
 INSERT INTO dbo.HoSo( MaHoSo, TenHoSo, SoLuongToiDa, GhiChu )VALUES( 'HS001', N'Học bạ cấp THCS (Bản chính)', 1, N'' )
 INSERT INTO dbo.HoSo( MaHoSo, TenHoSo, SoLuongToiDa, GhiChu )VALUES( 'HS002', N'Bằng tốt nghiệp THCS (bản chính)', 1, N'' )

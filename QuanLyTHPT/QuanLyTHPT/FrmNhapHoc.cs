@@ -17,13 +17,16 @@ namespace QuanLyTHPT
         NhanVien nhanVien = null;
         HOCSINH hocSinh = null;
         List<HoSo_PP> hoSo_PPs = null;
+        List<Tinh> dataAddress = null;
         public frmNhapHoc()
         {
             InitializeComponent();
             CenterToScreen();
             nhanVien = BienToanCuc.Instance.NguoiDung;
             lblNhanVien.Text = "Chào mừng bạn " + nhanVien.TenNV + " - " + nhanVien.MaNV;
+            loadTinh();
             EniableControls(false);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,30 +36,25 @@ namespace QuanLyTHPT
             txtCCCDFind.Text = frmDanhSachUngTuyen.result;
             txtCCCDFind.Focus();
         }
-        private DataTable ListToDataTable()
-        {
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("Mã hồ sơ");
-            dataTable.Columns.Add("Tên hồ sơ");
-            dataTable.Columns.Add("Số lượng tối đa");
-            dataTable.Columns.Add("Số luọng ghi nhận");
-            dataTable.Columns.Add("Ghi chú");
 
-            foreach (HoSo_PP item in hoSo_PPs)
-            {
-                dataTable.Rows.Add(item.maHoSo, item.tenHS, item.soLuongToiDan, item.soLuongGhiNhan, item.ghiChu);
-            }
-            return dataTable;
-        }
         private void LoadHoSo()
         {
+            dataGridView.AutoGenerateColumns = false;
             hoSo_PPs = HoSoBLL.Instance.GetHoSo();
-            dataGridView.DataSource = ListToDataTable();
-            dataGridView.Columns[1].Width = 200;
-
-            dataGridView.Columns[0].ReadOnly = true;
-            dataGridView.Columns[1].ReadOnly = true;
-            dataGridView.Columns[2].ReadOnly = true;
+            dataGridView.DataSource = hoSo_PPs;
+            dataGridView.Columns[0].DataPropertyName = "MaHoSo";
+            dataGridView.Columns[1].DataPropertyName = "TenHS";
+            dataGridView.Columns[2].DataPropertyName = "SoLuongToiDan";
+            dataGridView.Columns[3].DataPropertyName = "SoLuongGhiNhan";
+            dataGridView.Columns[4].DataPropertyName = "GhiChu";
+        }
+        
+        private void loadTinh()
+        {
+            dataAddress = DiaChiBLL.Instance.getData();
+            cbbTinh.DataSource = dataAddress;
+            cbbTinh.DisplayMember = "name";
+            cbbTinh.ValueMember = "code";
         }
         private void EniableControls(bool trangThai)
         {
@@ -85,9 +83,13 @@ namespace QuanLyTHPT
             }
             foreach (Control item in groupBoxThongTinHS.Controls)
             {
-                if (item is Button || item is Label)
+                if (item is Button || item is Label || item is RadioButton)
                     continue;
-                else
+                else if (item is ComboBox)
+                {
+                    (item as ComboBox).SelectedIndex = 0;
+                }
+                else 
                     item.Text = null;
             }
             foreach (Control item in panelIN.Controls)
@@ -106,15 +108,27 @@ namespace QuanLyTHPT
             }
             hocSinh = null;
             hoSo_PPs = null;
+            rdbNam.Checked = true;
             dataGridView.DataSource = null;
         }
         private void FillHocSinhToControl()
         {
             txtMaHS.Text = hocSinh.MaHS;
             txtCCCD.Text = hocSinh.CCCD;
-            txtDiaChi.Text = hocSinh.DiaChi;
             txtTenHS.Text = hocSinh.TenHS;
             txtSDT.Text = hocSinh.SoDienThoai;
+            rdbNam.Checked =  hocSinh.GioiTinh;
+            rdbNu.Checked = !hocSinh.GioiTinh;
+            dptNgaySinh.Value = hocSinh.NgaySinh;
+            Tinh tinh = new Tinh();
+            Huyen huyen = new Huyen(); 
+            Phuong phuong = new Phuong();
+            string duong = "";
+            DiaChiBLL.Instance.fillAddress(out tinh, out huyen, out phuong, out duong, hocSinh.DiaChi, dataAddress);
+            cbbTinh.SelectedItem = tinh;
+            cbbQuan.SelectedItem = huyen;
+            cbbPhuong.SelectedItem = phuong;
+            txtDuong.Text = duong;
         }
         private void txtCCCDFind_Leave(object sender, EventArgs e)
         {
@@ -143,7 +157,6 @@ namespace QuanLyTHPT
                     hocSinh = null;
                 }
             }
-            
         }
         private void txtCCCDFind_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -213,10 +226,10 @@ namespace QuanLyTHPT
                 if (soLuong != 0)
                 {
                     HoSo_PP hoSo_PP = new HoSo_PP();
-                    hoSo_PP.maHoSo = dataGridView.Rows[i].Cells[0].Value.ToString();
-                    hoSo_PP.tenHS = dataGridView.Rows[i].Cells[1].Value.ToString();
-                    hoSo_PP.soLuongGhiNhan = int.Parse(dataGridView.Rows[i].Cells[3].Value.ToString());
-                    hoSo_PP.ghiChu = dataGridView.Rows[i].Cells[4].Value.ToString();
+                    hoSo_PP.MaHoSo = dataGridView.Rows[i].Cells[0].Value.ToString();
+                    hoSo_PP.TenHS = dataGridView.Rows[i].Cells[1].Value.ToString();
+                    hoSo_PP.SoLuongGhiNhan = int.Parse(dataGridView.Rows[i].Cells[3].Value.ToString());
+                    hoSo_PP.GhiChu = dataGridView.Rows[i].Cells[4].Value.ToString();
                     hoSo_s.Add(hoSo_PP);
                 }
             }
@@ -252,6 +265,23 @@ namespace QuanLyTHPT
                 MyMessageBox.ShowError("Loi them hoc sinh");
             }    
                 
+        }
+
+        private void cbbTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Tinh tinh = dataAddress.Where(t => t.Code == (cbbTinh.SelectedItem as Tinh).Code).FirstOrDefault();
+            cbbQuan.DataSource = tinh.Districts;
+            cbbQuan.DisplayMember = "Name";
+            cbbQuan.ValueMember = "code";
+        }
+
+        private void cbbQuan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Tinh tinh = dataAddress.Where(t => t.Code == (cbbTinh.SelectedItem as Tinh).Code).FirstOrDefault();
+            Huyen huyen = tinh.Districts.Where(h => h.Code == (cbbQuan.SelectedItem as Huyen).Code).FirstOrDefault();
+            cbbPhuong.DataSource = huyen.Wards;
+            cbbPhuong.DisplayMember = "Name";
+            cbbPhuong.ValueMember = "code";
         }
     }
 }

@@ -18,19 +18,18 @@ namespace QuanLyTHPT
             InitializeComponent();
             CenterToScreen();
         }
-        List<DSTrungTuyen> dSTrungTuyens = new List<DSTrungTuyen>();
         private void frmDanhSachUngTuyen_Load(object sender, EventArgs e)
         {
-            dSTrungTuyens = ThiSinhTrungTuyenBLL.Instance.layDSTrungTuyen();
+            List<DSTrungTuyen>  dSTrungTuyens = ThiSinhTrungTuyenBLL.Instance.layDSTrungTuyen();
             dataGridView.DataSource = dSTrungTuyens;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(txtSearch.Text))
-                dataGridView.DataSource = dSTrungTuyens;
+                dataGridView.DataSource = ThiSinhTrungTuyenBLL.Instance.layDSTrungTuyen();
             else
-                dataGridView.DataSource = ThiSinhTrungTuyenBLL.Instance.TimDSTrungTuyens(dSTrungTuyens, txtSearch.Text);
+                dataGridView.DataSource = ThiSinhTrungTuyenBLL.Instance.TimDSTrungTuyens(txtSearch.Text);
         }
 
         private void dataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

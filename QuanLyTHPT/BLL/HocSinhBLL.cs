@@ -74,6 +74,8 @@ namespace BLL
             hocSinh.TenHS = dSTrungTuyen.TenTS;
             hocSinh.CCCD = dSTrungTuyen.CCCD;
             hocSinh.DiaChi = dSTrungTuyen.DiaChi;
+            hocSinh.NgaySinh = dSTrungTuyen.NgaySinh;
+            hocSinh.GioiTinh = dSTrungTuyen.GioiTinh;
             hocSinh.SoDienThoai = dSTrungTuyen.SoDienThoai;
             return hocSinh;
         }
