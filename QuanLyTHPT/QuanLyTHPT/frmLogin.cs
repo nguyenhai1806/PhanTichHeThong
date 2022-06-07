@@ -18,18 +18,22 @@ namespace QuanLyTHPT
             InitializeComponent();
             CenterToScreen();
         }
-
         private void btnDangNhap_Click(object sender, EventArgs e){
             string taiKhoan = txtTaiKhoan.Text;
             string password = txtPassword.Text;
             if (!String.IsNullOrWhiteSpace(taiKhoan) && !String.IsNullOrWhiteSpace(password))
             {
+                progressBar.Value = 10;
                 NhanVien nhanVien = NhanVienBLL.Instance.DangNhap(taiKhoan, password);
                 if (nhanVien != null)
                 {
+                    progressBar.Value = 20;
                     BienToanCuc.Instance.NguoiDung = nhanVien;
+                    progressBar.Value = 30;
                     frmNhapHoc nhapHoc = new frmNhapHoc();
+                    progressBar.Value = 40;
                     nhapHoc.Show();
+                    progressBar.Value = 50;
                     this.Hide();
                 }
                 else

@@ -60,6 +60,9 @@
     <Compile Include="GiayXacNhanNhapHocBLL.cs" />
     <Compile Include="HocSinhBLL.cs" />
     <Compile Include="HoSoBLL.cs" />
+    <Compile Include="KhoiBLL.cs" />
+    <Compile Include="LopHocBLL.cs" />
+    <Compile Include="NamHocBLL.cs" />
     <Compile Include="NhanVienBLL.cs" />
     <Compile Include="PhieuBienNhanHoSoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -32,5 +32,15 @@ namespace DTO.Properties {
                 return ((string)(this["QLHOCSINHConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=nGUYENhAIPC;Initial Catalog=QLHOCSINH;Integrated Security=True")]
+        public string QLHOCSINHConnectionString1 {
+            get {
+                return ((string)(this["QLHOCSINHConnectionString1"]));
+            }
+        }
     }
 }

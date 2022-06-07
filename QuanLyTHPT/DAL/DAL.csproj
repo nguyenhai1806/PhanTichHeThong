@@ -45,6 +45,10 @@
     <Compile Include="GiayXacNhanNhapHocDAL.cs" />
     <Compile Include="HocSinhDAL.cs" />
     <Compile Include="HoSoDAL.cs" />
+    <Compile Include="KhoiDAL.cs" />
+    <Compile Include="LopHocDAL.cs" />
+    <Compile Include="Lop_PhanLop.cs" />
+    <Compile Include="NamHocDAL.cs" />
     <Compile Include="NhanVienDAL.cs" />
     <Compile Include="PhieuBienNhanHoSoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

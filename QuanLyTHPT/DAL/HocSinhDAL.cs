@@ -41,10 +41,31 @@ namespace DAL
                 dataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
+        }
+        public List<HocSinh_Diem> layHocSinhChuaPhanLop()
+        {
+            return (from hs in dataContext.HOCSINHs
+                    join ts in dataContext.DSTrungTuyens
+                    on hs.CCCD equals ts.CCCD
+                    where !(from hslh in dataContext.HocSinh_LopHocs select hslh.MaHS).Contains(hs.MaHS)
+                    select new HocSinh_Diem
+                    {
+                        MaHS = hs.MaHS,
+                        TenHS = hs.TenHS,
+                        CCCD = hs.CCCD,
+                        DiaChi = hs.DiaChi,
+                        GioiTinh = hs.GioiTinh,
+                        NgaySinh = hs.NgaySinh,
+                        DiemToan = ts.DiemToan,
+                        DiemLy = ts.DiemLy,
+                        DiemHoa = ts.DiemHoa,
+                        DiemVan = ts.DiemVan,
+                        DiemAnh = ts.DiemAnh,
+                    }).ToList();
         }
     }
 }

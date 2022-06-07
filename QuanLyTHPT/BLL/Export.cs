@@ -40,7 +40,7 @@ namespace BLL
             string tenfile = "phieuBienNhanHS" + hocSinh.MaHS + ".doc";
             phieuBienNhanHS.SaveAndOpenFile(tenfile);
         }
-        public void InGiayXacNhanNhapHoc(HOCSINH hocSinh, NhanVien nhanVien,string khoi, string taiKhoan, string matKhau, string gioiTinh)
+        public void InGiayXacNhanNhapHoc(HOCSINH hocSinh, NhanVien nhanVien,string khoi, string taiKhoan, string matKhau, string namHoc)
         {
             DateTime homNay = DateTime.Now;
             //Bước 1: Nạp file mẫu
@@ -51,14 +51,17 @@ namespace BLL
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "Thang" }, new[] { DateTime.Now.Month.ToString() });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "Nam" }, new[] { DateTime.Now.Year.ToString() });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "HoTen" }, new[] { hocSinh.TenHS });
-            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "NgaySinh" }, new[] { String.Format("{0}/{1}/{2}",homNay.Day,homNay.Month,homNay.Year) });
+            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "NgaySinh" }, new[] { String.Format("{0}/{1}/{2}",hocSinh.NgaySinh.Day, hocSinh.NgaySinh.Month, hocSinh.NgaySinh.Year) });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "MaHS" }, new[] { hocSinh.MaHS });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "TenTaiKhoan" }, new[] { taiKhoan });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "CCCD" }, new[] { hocSinh.CCCD });
-            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "GioiTinh" }, new[] { gioiTinh});
+            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "GioiTinh" }, new[] { hocSinh.GioiTinh ? "Nam" : "Nữ"});
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "Khoi" }, new[] { khoi });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "MatKhau" }, new[] { matKhau });
             giayXacNhanNhapHoc.MailMerge.Execute(new[] { "NhanVien" }, new[] { nhanVien.TenNV });
+            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "DiaChi" }, new[] { hocSinh.DiaChi });
+            giayXacNhanNhapHoc.MailMerge.Execute(new[] { "NamHoc" }, new[] { namHoc });
+
             string tenfile = "BieuMauXacNhanNhapHoc_" + hocSinh.MaHS + ".doc";
             giayXacNhanNhapHoc.SaveAndOpenFile(tenfile);
         }

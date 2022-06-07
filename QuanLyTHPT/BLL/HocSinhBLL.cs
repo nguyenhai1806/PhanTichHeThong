@@ -83,5 +83,9 @@ namespace BLL
         {
             return HocSinhDAL.Instance.ThemHocSinh(hocSinh);
         }
+        public List<HocSinh_Diem> LayHocSinhChuaPhanLop()
+        {
+            return HocSinhDAL.Instance.layHocSinhChuaPhanLop();
+        }
     }
 }

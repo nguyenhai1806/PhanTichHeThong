@@ -105,7 +105,7 @@ namespace DTO
     #endregion
 		
 		public QL_THPTDataContext() : 
-				base(global::DTO.Properties.Settings.Default.QLHOCSINHConnectionString, mappingSource)
+				base(global::DTO.Properties.Settings.Default.QLHOCSINHConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -714,6 +714,16 @@ namespace DTO
 		
 		private string _SoDienThoai;
 		
+		private double _DiemToan;
+		
+		private double _DiemLy;
+		
+		private double _DiemHoa;
+		
+		private double _DiemVan;
+		
+		private double _DiemAnh;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -732,6 +742,16 @@ namespace DTO
     partial void OnGioiTinhChanged();
     partial void OnSoDienThoaiChanging(string value);
     partial void OnSoDienThoaiChanged();
+    partial void OnDiemToanChanging(double value);
+    partial void OnDiemToanChanged();
+    partial void OnDiemLyChanging(double value);
+    partial void OnDiemLyChanged();
+    partial void OnDiemHoaChanging(double value);
+    partial void OnDiemHoaChanged();
+    partial void OnDiemVanChanging(double value);
+    partial void OnDiemVanChanged();
+    partial void OnDiemAnhChanging(double value);
+    partial void OnDiemAnhChanged();
     #endregion
 		
 		public DSTrungTuyen()
@@ -875,6 +895,106 @@ namespace DTO
 					this._SoDienThoai = value;
 					this.SendPropertyChanged("SoDienThoai");
 					this.OnSoDienThoaiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemToan", DbType="Float NOT NULL")]
+		public double DiemToan
+		{
+			get
+			{
+				return this._DiemToan;
+			}
+			set
+			{
+				if ((this._DiemToan != value))
+				{
+					this.OnDiemToanChanging(value);
+					this.SendPropertyChanging();
+					this._DiemToan = value;
+					this.SendPropertyChanged("DiemToan");
+					this.OnDiemToanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemLy", DbType="Float NOT NULL")]
+		public double DiemLy
+		{
+			get
+			{
+				return this._DiemLy;
+			}
+			set
+			{
+				if ((this._DiemLy != value))
+				{
+					this.OnDiemLyChanging(value);
+					this.SendPropertyChanging();
+					this._DiemLy = value;
+					this.SendPropertyChanged("DiemLy");
+					this.OnDiemLyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemHoa", DbType="Float NOT NULL")]
+		public double DiemHoa
+		{
+			get
+			{
+				return this._DiemHoa;
+			}
+			set
+			{
+				if ((this._DiemHoa != value))
+				{
+					this.OnDiemHoaChanging(value);
+					this.SendPropertyChanging();
+					this._DiemHoa = value;
+					this.SendPropertyChanged("DiemHoa");
+					this.OnDiemHoaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemVan", DbType="Float NOT NULL")]
+		public double DiemVan
+		{
+			get
+			{
+				return this._DiemVan;
+			}
+			set
+			{
+				if ((this._DiemVan != value))
+				{
+					this.OnDiemVanChanging(value);
+					this.SendPropertyChanging();
+					this._DiemVan = value;
+					this.SendPropertyChanged("DiemVan");
+					this.OnDiemVanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemAnh", DbType="Float NOT NULL")]
+		public double DiemAnh
+		{
+			get
+			{
+				return this._DiemAnh;
+			}
+			set
+			{
+				if ((this._DiemAnh != value))
+				{
+					this.OnDiemAnhChanging(value);
+					this.SendPropertyChanging();
+					this._DiemAnh = value;
+					this.SendPropertyChanged("DiemAnh");
+					this.OnDiemAnhChanged();
 				}
 			}
 		}

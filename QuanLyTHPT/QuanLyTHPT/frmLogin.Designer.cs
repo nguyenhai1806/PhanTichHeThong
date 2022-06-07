@@ -37,6 +37,7 @@ namespace QuanLyTHPT
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            progressBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,13 +112,21 @@ namespace QuanLyTHPT
             this.btnThoat.Text = "Thoat";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
+            // progressBar
+            // 
+            progressBar.Location = new System.Drawing.Point(411, 275);
+            progressBar.Name = "progressBar";
+            progressBar.Size = new System.Drawing.Size(318, 10);
+            progressBar.TabIndex = 5;
+            // 
             // frmLogin
             // 
             this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
-            this.ClientSize = new System.Drawing.Size(802, 298);
+            this.ClientSize = new System.Drawing.Size(802, 297);
+            this.Controls.Add(progressBar);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtPassword);
@@ -141,5 +150,6 @@ namespace QuanLyTHPT
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
+        public static System.Windows.Forms.ProgressBar progressBar;
     }
 }
