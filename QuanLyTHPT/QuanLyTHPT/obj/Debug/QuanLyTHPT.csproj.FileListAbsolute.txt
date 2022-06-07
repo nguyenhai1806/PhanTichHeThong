@@ -27,6 +27,7 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.Properties.Resources.resources
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.GenerateResource.cache
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.AssemblyReference.cache
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Template\BieuMauXacNhanNhapHoc.doc
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Template\Bieu_Mau_Bien_Nhan_HS.doc
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\QuanLyTHPT.exe.config
@@ -42,7 +43,6 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\DTO.dll.config
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Newtonsoft.Json.xml
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\DAL.pdb
-C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.AssemblyReference.cache
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.exe
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.pdb

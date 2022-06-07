@@ -11,4 +11,3 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DTO\bin\Deb
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.dll
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.pdb
-C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache

@@ -334,6 +334,7 @@ namespace QuanLyTHPT
             dgvTTHS.Columns[7].DataPropertyName = "DiemHoa";
             dgvTTHS.Columns[8].DataPropertyName = "DiemVan";
             dgvTTHS.Columns[9].DataPropertyName = "DiemAnh";
+            dgvTTHS.Refresh();
         }
         private void LoadLopHoc(Khoi khoi, NamHoc namHoc)
         {
@@ -344,7 +345,10 @@ namespace QuanLyTHPT
         }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loadKhoi_NamHoc_HocSinhChuaNhapHoc();
+            if (tabControl1.SelectedTab.Name == "tabPage2")
+            {
+                loadKhoi_NamHoc_HocSinhChuaNhapHoc();
+            }
         }
 
         private void cbbNamHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -366,9 +370,15 @@ namespace QuanLyTHPT
             else
             {
                 LopHocBLL.Instance.PhanLop(hocSinhChuaPhanLop, lop_PhanLop);
-                MyMessageBox.ShowInformation("Cac hoc sinh da duoc phan lop");
                 loadKhoi_NamHoc_HocSinhChuaNhapHoc();
+                MyMessageBox.ShowInformation("Cac hoc sinh da duoc phan lop");
+                
             }
+        }
+
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

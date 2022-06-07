@@ -277,9 +277,11 @@ ALTER PROC PROC_CreateDataNhapHoc
 AS
 BEGIN
 	
+	DELETE CTPhieuBienNhanHS
+	DELETE PhieuBienNhanHS
 	DELETE GiayXacNhanNhapHoc
 	DELETE HocSinh_LopHoc
-	DELETE  HOCSINH
+	DELETE HOCSINH
 
 	INSERT [dbo].[HOCSINH] ([MaHS], [TenHS], [CCCD], [DiaChi], [NgaySinh], [GioiTinh], [SoDienThoai]) VALUES (N'HS001     ', N'Đỗ Ngọc Hương An', N'578654748137', N'100 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định', CAST(N'2008-03-12' AS Date), 0, N'0911845967')
 	INSERT [dbo].[HOCSINH] ([MaHS], [TenHS], [CCCD], [DiaChi], [NgaySinh], [GioiTinh], [SoDienThoai]) VALUES (N'HS002     ', N'Lê Mỹ An', N'489986894711', N'232 Âu Cơ, Phường Nhơn Bình, Thành phố Quy Nhơn, Tỉnh Bình Định', CAST(N'2008-03-15' AS Date), 0, N'0411825949')
@@ -364,7 +366,7 @@ BEGIN
 	SUM(ts.DiemVan) / COUNT(LopHoc.MaLop) AS 'DTB VAN', 
 	SUM(ts.DiemAnh) / COUNT(LopHoc.MaLop) AS 'DTB ANH', 
 	COUNT(LopHoc.MaLop) AS 'si so', 
-	SUM(CASE WHEN HOCSINH.GioiTinh = 1 THEN 1 END) / CAST(COUNT(LopHoc.MaLop) AS FLOAT) AS 'Ti le nam'  FROM HocSinh
+	CAST(COUNT(CASE WHEN HOCSINH.GioiTinh = 1 THEN 1 END) AS FLOAT)  / CAST(COUNT(*) AS FLOAT) AS 'Ti le nam'  FROM HocSinh
 	JOIN HocSinh_LopHoc ON HocSinh.MaHS = HocSinh_LopHoc.MaHS
 	JOIN LopHoc ON LopHoc.MaLop = HocSinh_LopHoc.MaLop
 	JOIN DSTrungTuyen  TS ON HocSinh.CCCD = TS.CCCD
@@ -375,8 +377,8 @@ END
 GO
 
 
-EXEC PROC_CreateDataNhapHoc
-GO
+--EXEC PROC_CreateDataNhapHoc
+--GO
 
-EXEC PROC_XemKetQuaPhanLop
-GO
+--EXEC PROC_XemKetQuaPhanLop
+--GO

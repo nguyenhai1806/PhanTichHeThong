@@ -52,6 +52,54 @@ namespace BLL
                 }
             }
         }
+        public bool kiemTraDieuKien(List<Lop_PhanLop> list)
+        {
+            foreach (Lop_PhanLop item1 in list)
+            {
+                foreach (Lop_PhanLop item2 in list)
+                {
+                    if (item1 == item2)
+                        continue;
+                    else
+                    {
+                        if (Math.Abs(item1.DTBToan - item2.DTBToan) > Lop_PhanLop.saiSoDiem + 1.2)
+                            return false;
+                        if (Math.Abs(item1.DTBLy - item2.DTBLy) > Lop_PhanLop.saiSoDiem + 1.2)
+                            return false;
+                        if (Math.Abs(item1.DTBHoa - item2.DTBHoa) > Lop_PhanLop.saiSoDiem + 1.2)
+                            return false;
+                        if (Math.Abs(item1.DTBVan - item2.DTBVan) > Lop_PhanLop.saiSoDiem + 1.2)
+                            return false;
+                        if (Math.Abs(item1.DTBAnh - item2.DTBAnh) > Lop_PhanLop.saiSoDiem + 1.2)
+                            return false;
+
+                        if (Math.Abs(item1.SiSo - item2.SiSo) > Lop_PhanLop.saiSoSiSo + 2)
+                            return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public List<HocSinh_Diem> CopyListHocSinhChuaPhanLop(List<HocSinh_Diem> hocSinhChuaPhanLop)
+        {
+            List<HocSinh_Diem> result = new List<HocSinh_Diem>();
+            foreach (HocSinh_Diem item in hocSinhChuaPhanLop)
+            {
+                HocSinh_Diem temp = item;
+                result.Add(temp);
+            }
+            return result;
+        }
+        public List<DTO.Lop_PhanLop> CopyListLopPhanLop(List<Lop_PhanLop> lop_PhanLops)
+        {
+            List<Lop_PhanLop> result = new List<Lop_PhanLop>();
+            foreach (Lop_PhanLop item in lop_PhanLops)
+            {
+                Lop_PhanLop temp = new Lop_PhanLop(item);
+                result.Add(temp);
+            }
+            return result;
+        }
         public void PhanLop(List<HocSinh_Diem> hocSinhChuaPhanLop, List<LopHoc> lopHocs)
         {
             //Tinh diem tb cac mon cua tat ca hoc sinh
@@ -64,6 +112,7 @@ namespace BLL
             double tiLeNam = (float)hocSinhChuaPhanLop.Count(HS => HS.GioiTinh == true) / hocSinhChuaPhanLop.Count();
             int soLuongHSBanDau = hocSinhChuaPhanLop.Count();
             //Chuyen lop hoc thanh lop_phanlop
+
             List<Lop_PhanLop> list = new List<Lop_PhanLop>();
             foreach (LopHoc item in lopHocs)
             {
@@ -71,57 +120,65 @@ namespace BLL
                 lop_PhanLop.MaLop = item.MaLop;
                 list.Add(lop_PhanLop);
             }
-            int soLanLap = 0;
+            List<Lop_PhanLop> listClone;
+            List<HocSinh_Diem> hocSinhChuaPhanLopClone;
             do
             {
-                //Tron hoc sinh
-                Shuffle(hocSinhChuaPhanLop);
-                //Phan lop
-                for (int i = 0; i < list.Count; i++)
+                listClone = CopyListLopPhanLop(list);
+                hocSinhChuaPhanLopClone = CopyListHocSinhChuaPhanLop(hocSinhChuaPhanLop);
+                int soLanLap = 0;
+                do
                 {
-                    for (int j = 0; j < hocSinhChuaPhanLop.Count; j++)
+                    //Tron hoc sinh
+                    Shuffle(hocSinhChuaPhanLopClone);
+                    //Phan lop
+                    for (int i = 0; i < listClone.Count; i++)
                     {
-                        HocSinh_Diem itemHS = hocSinhChuaPhanLop[j];
-                        list[i].Hocsinhs.Add(itemHS);
-                        int result = list[i].kiemTraDieuKien(dtbToan, dtbLy, dtbHoa, dtbVan, dtbAnh, tiLeNam, siSo);
-                        if (result == 1)
-                            list[i].Hocsinhs.Remove(itemHS);
-                        else
+                        for (int j = 0; j < hocSinhChuaPhanLopClone.Count; j++)
                         {
-                            hocSinhChuaPhanLop.RemoveAt(j);
-                            j--;
-                            if (result == 0)
-                                break;
+                            HocSinh_Diem itemHS = hocSinhChuaPhanLopClone[j];
+                            listClone[i].Hocsinhs.Add(itemHS);
+                            int result = listClone[i].kiemTraDieuKien(dtbToan, dtbLy, dtbHoa, dtbVan, dtbAnh, tiLeNam, siSo);
+                            if (result == 1)
+                                listClone[i].Hocsinhs.Remove(itemHS);
+                            else
+                            {
+                                hocSinhChuaPhanLopClone.RemoveAt(j);
+                                j--;
+                                if (result == 0)
+                                    break;
+                            }
+                            continue;
                         }
                         continue;
                     }
-                    continue;
-                }
-                soLanLap++;
-            } while (!(hocSinhChuaPhanLop.Count < soLuongHSBanDau / 10 || soLanLap > soLuongHSBanDau / 10));
+                    soLanLap++;
+                } while (!(hocSinhChuaPhanLopClone.Count < soLuongHSBanDau / 10 || soLanLap > soLuongHSBanDau / 10));
 
-            //Rai nhung hoc sinh chua duoc phan vao cac lop
-            while(hocSinhChuaPhanLop.Count != 0)
-            {
-                for (int i = 0; i < list.Count; i++)
+                //Rai nhung hoc sinh chua duoc phan vao cac lop
+                while (hocSinhChuaPhanLopClone.Count != 0)
                 {
-                    int indexMin = i;
-                    for (int j = 0; j < list.Count; j++)
+                    for (int i = 0; i < listClone.Count; i++)
                     {
-                        if (list[indexMin].SiSo > list[j].SiSo)
-                            indexMin = j;
-                    }
+                        int indexMin = i;
+                        for (int j = 0; j < listClone.Count; j++)
+                        {
+                            if (listClone[indexMin].SiSo > listClone[j].SiSo)
+                                indexMin = j;
+                        }
 
-                    if (hocSinhChuaPhanLop.Count != 0)
-                    {
-                        list[indexMin].Hocsinhs.Add(hocSinhChuaPhanLop[0]);
-                        hocSinhChuaPhanLop.RemoveAt(0);
+                        if (hocSinhChuaPhanLopClone.Count != 0)
+                        {
+                            listClone[indexMin].Hocsinhs.Add(hocSinhChuaPhanLopClone[0]);
+                            hocSinhChuaPhanLopClone.RemoveAt(0);
+                        }
                     }
                 }
-            }
+            } while (!kiemTraDieuKien(listClone));
+            
 
             //Them hoc sinh xuong csdl
-            foreach (Lop_PhanLop phanLop in list)
+            foreach (Lop_PhanLop phanLop in listClone)
             {
                 foreach (HocSinh_Diem hocSinh in phanLop.Hocsinhs)
                 {

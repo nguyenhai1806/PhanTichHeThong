@@ -390,6 +390,7 @@ namespace QuanLyTHPT
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(232, 27);
             this.txtSDT.TabIndex = 4;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // label9
             // 

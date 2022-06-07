@@ -814,7 +814,7 @@
 					location   	(1643, 1360)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	776
+					max_width  	789
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -844,7 +844,7 @@
 					location   	(1644, 891)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	770
+					max_width  	783
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -874,7 +874,7 @@
 					location   	(312, 2056)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	779
+					max_width  	792
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -904,7 +904,7 @@
 					location   	(328, 1567)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	776
+					max_width  	789
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -1255,7 +1255,7 @@
 				    location   	(2031, 424)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	750
+				    max_width  	786
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -1806,7 +1806,7 @@
 				    location   	(1247, 1214)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	855
+				    max_width  	863
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -1837,7 +1837,7 @@
 				    location   	(2355, 528)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	808
+				    max_width  	815
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -1866,7 +1866,7 @@
 				    location   	(2124, 1719)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	763
+				    max_width  	770
 				    justify    	0
 				    label      	"Lap phieu xac nhan nhap hoc")
 				icon       	"Business Entity"
@@ -1895,7 +1895,7 @@
 				    location   	(2298, 1053)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	808
+				    max_width  	815
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -1924,7 +1924,7 @@
 				    location   	(291, 1656)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	808
+				    max_width  	815
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -1953,7 +1953,7 @@
 				    location   	(221, 601)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	598
+				    max_width  	605
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -3123,7 +3123,7 @@
 					location   	(1590, 1119)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	789
+					max_width  	802
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -3153,7 +3153,7 @@
 					location   	(1593, 1557)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	789
+					max_width  	802
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -3183,7 +3183,7 @@
 					location   	(369, 1845)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	789
+					max_width  	802
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -3213,7 +3213,7 @@
 					location   	(366, 2205)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	789
+					max_width  	802
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -4117,7 +4117,7 @@
 				    location   	(1541, 644)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	879
+				    max_width  	885
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -4148,7 +4148,7 @@
 				    location   	(119, 628)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	609
+				    max_width  	616
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -4178,7 +4178,7 @@
 				    location   	(2901, 590)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -4207,7 +4207,7 @@
 				    location   	(273, 1377)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -4236,7 +4236,7 @@
 				    location   	(1537, 1479)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -4265,7 +4265,7 @@
 				    location   	(2688, 1302)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -5218,7 +5218,7 @@
 					location   	(1653, 564)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	815
+					max_width  	828
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -5248,7 +5248,7 @@
 					location   	(510, 1365)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	844
+					max_width  	857
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -5298,7 +5298,7 @@
 					location   	(495, 897)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	863
+					max_width  	876
 					justify    	0
 					label      	"  ")
 				    icon       	"Business Entity"
@@ -6198,7 +6198,7 @@
 				    location   	(1472, 710)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	852
+				    max_width  	859
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -6229,7 +6229,7 @@
 				    location   	(2814, 1428)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	869
+				    max_width  	876
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -6258,7 +6258,7 @@
 				    location   	(2808, 655)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	869
+				    max_width  	876
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -6287,7 +6287,7 @@
 				    location   	(162, 1371)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	869
+				    max_width  	876
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -6316,7 +6316,7 @@
 				    location   	(164, 690)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	613
+				    max_width  	619
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -6969,7 +6969,7 @@
 					location   	(1217, 537)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	795
+					max_width  	808
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -7009,7 +7009,7 @@
 					location   	(1231, 1107)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	795
+					max_width  	808
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -7554,7 +7554,7 @@
 				    location   	(1130, 737)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	859
+				    max_width  	867
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -7585,7 +7585,7 @@
 				    location   	(2025, 690)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	799
+				    max_width  	805
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -7614,7 +7614,7 @@
 				    location   	(207, 1515)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	799
+				    max_width  	805
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -7643,7 +7643,7 @@
 				    location   	(209, 721)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	601
+				    max_width  	609
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -8398,7 +8398,7 @@
 					location   	(1239, 282)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	779
+					max_width  	792
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -8438,7 +8438,7 @@
 					location   	(1263, 1446)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	786
+					max_width  	799
 					justify    	0
 					label      	"  ")
 				    icon       	"Business Entity"
@@ -8478,7 +8478,7 @@
 					location   	(1248, 849)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	799
+					max_width  	811
 					justify    	0
 					label      	"   ")
 				    icon       	"Business Entity"
@@ -9256,7 +9256,7 @@
 				    location   	(1175, 818)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	879
+				    max_width  	885
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -9287,7 +9287,7 @@
 				    location   	(180, 1452)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -9316,7 +9316,7 @@
 				    location   	(2163, 1440)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -9345,7 +9345,7 @@
 				    location   	(158, 805)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	609
+				    max_width  	616
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -9375,7 +9375,7 @@
 				    location   	(2196, 633)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	805
+				    max_width  	811
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -10198,7 +10198,7 @@
 					location   	(1266, 570)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	792
+					max_width  	805
 					justify    	0
 					label      	"")
 				    icon       	"Business Entity"
@@ -10238,7 +10238,7 @@
 					location   	(1614, 882)
 					anchor_loc 	1
 					nlines     	2
-					max_width  	789
+					max_width  	802
 					justify    	0
 					label      	" ")
 				    icon       	"Business Entity"
@@ -10778,7 +10778,7 @@
 				    location   	(1334, 604)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	855
+				    max_width  	863
 				    justify    	0
 				    label      	"")
 				icon       	"Business Worker"
@@ -10809,7 +10809,7 @@
 				    location   	(245, 583)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	598
+				    max_width  	605
 				    justify    	0
 				    label      	"")
 				icon       	"Business Actor"
@@ -10839,7 +10839,7 @@
 				    location   	(270, 1167)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	802
+				    max_width  	808
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -10868,7 +10868,7 @@
 				    location   	(2370, 549)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	802
+				    max_width  	808
 				    justify    	0
 				    label      	"")
 				icon       	"Business Entity"
@@ -11233,46 +11233,7 @@
 			fill_color 	13434879
 			quidu      	"5DE54386004E"
 			width      	306)
-		    (object DependencyView "" @514
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @515
-			    Parent_View 	@514
-			    location   	(1154, 463)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.463649
-			    height     	57
-			    orientation 	1)
-			line_color 	3342489
-			quidu      	"5DE5447801A6"
-			client     	@513
-			supplier   	@512
-			vertices   	(list Points
-			    (1388, 476)
-			    (903, 566))
-			line_style 	0)
-		    (object UseCaseView "Use Case View::Nhap hoc THCS" @516
+		    (object UseCaseView "Use Case View::Nhap hoc THCS" @514
 			location   	(1954, 903)
 			font       	(object Font
 			    size       	10
@@ -11284,7 +11245,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@516
+			    Parent_View 	@514
 			    location   	(1953, 1078)
 			    anchor_loc 	1
 			    nlines     	2
@@ -11297,46 +11258,7 @@
 			fill_color 	13434879
 			quidu      	"5DE5437102FE"
 			width      	306)
-		    (object DependencyView "" @517
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @518
-			    Parent_View 	@517
-			    location   	(1843, 700)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.553179
-			    height     	56
-			    orientation 	0)
-			line_color 	3342489
-			quidu      	"5DE544820204"
-			client     	@513
-			supplier   	@516
-			vertices   	(list Points
-			    (1723, 650)
-			    (1864, 807))
-			line_style 	0)
-		    (object UseCaseView "Use Case View::Xet hanh kiem" @519
+		    (object UseCaseView "Use Case View::Xet hanh kiem" @515
 			location   	(1914, 1356)
 			font       	(object Font
 			    size       	10
@@ -11348,7 +11270,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@519
+			    Parent_View 	@515
 			    location   	(1913, 1531)
 			    anchor_loc 	1
 			    nlines     	2
@@ -11361,7 +11283,7 @@
 			fill_color 	13434879
 			quidu      	"5DE543DC01C5"
 			width      	306)
-		    (object UseCaseView "Use Case View::Chuyen truong" @520
+		    (object UseCaseView "Use Case View::Chuyen truong" @516
 			location   	(1287, 1542)
 			font       	(object Font
 			    size       	10
@@ -11373,7 +11295,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@520
+			    Parent_View 	@516
 			    location   	(1286, 1717)
 			    anchor_loc 	1
 			    nlines     	2
@@ -11386,7 +11308,7 @@
 			fill_color 	13434879
 			quidu      	"5DE5438F034C"
 			width      	306)
-		    (object UseCaseView "Use Case View::Xet duyet nhap hoc THPT" @521
+		    (object UseCaseView "Use Case View::Xet duyet nhap hoc THPT" @517
 			location   	(666, 1224)
 			font       	(object Font
 			    size       	10
@@ -11398,7 +11320,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@521
+			    Parent_View 	@517
 			    location   	(665, 1399)
 			    anchor_loc 	1
 			    nlines     	2
@@ -11411,7 +11333,7 @@
 			fill_color 	13434879
 			quidu      	"5DE5498E033C"
 			width      	306)
-		    (object ClassView "Class" "Use Case View::Hoc Sinh" @522
+		    (object ClassView "Class" "Use Case View::Hoc Sinh" @518
 			ShowCompartmentStereotypes 	TRUE
 			SuppressAttribute 	TRUE
 			SuppressOperation 	TRUE
@@ -11428,7 +11350,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@522
+			    Parent_View 	@518
 			    location   	(1310, 1166)
 			    anchor_loc 	1
 			    nlines     	2
@@ -11443,7 +11365,7 @@
 			width      	202
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$68" @523
+		    (object AssociationViewNew "$UNNAMED$68" @519
 			location   	(1055, 791)
 			font       	(object Font
 			    size       	10
@@ -11458,31 +11380,31 @@
 			line_color 	3342489
 			quidu      	"5DE5444F00DB"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$69" @524
-				Parent_View 	@523
+			    (object RoleView "$UNNAMED$69" @520
+				Parent_View 	@519
 				location   	(-277, -92)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE54450004E"
-				client     	@523
+				client     	@519
 				supplier   	@512
 				vertices   	(list Points
 				    (1055, 791)
-				    (753, 597))
+				    (899, 690))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$70" @525
-				Parent_View 	@523
+			    (object RoleView "$UNNAMED$70" @521
+				Parent_View 	@519
 				location   	(-277, -92)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE544500050"
-				client     	@523
-				supplier   	@522
+				client     	@519
+				supplier   	@518
 				vertices   	(list Points
 				    (1055, 791)
-				    (1211, 890))
+				    (1211, 893))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$71" @526
+		    (object AssociationViewNew "$UNNAMED$71" @522
 			location   	(1405, 740)
 			font       	(object Font
 			    size       	10
@@ -11497,31 +11419,31 @@
 			line_color 	3342489
 			quidu      	"5DE5445C00AC"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$72" @527
-				Parent_View 	@526
+			    (object RoleView "$UNNAMED$72" @523
+				Parent_View 	@522
 				location   	(60, -208)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE5445C03AA"
-				client     	@526
+				client     	@522
 				supplier   	@513
 				vertices   	(list Points
 				    (1405, 740)
 				    (1445, 650))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$73" @528
-				Parent_View 	@526
+			    (object RoleView "$UNNAMED$73" @524
+				Parent_View 	@522
 				location   	(60, -208)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE5445C03B9"
-				client     	@526
-				supplier   	@522
+				client     	@522
+				supplier   	@518
 				vertices   	(list Points
 				    (1405, 740)
-				    (1362, 830))
+				    (1365, 830))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$74" @529
+		    (object AssociationViewNew "$UNNAMED$74" @525
 			location   	(1605, 929)
 			font       	(object Font
 			    size       	10
@@ -11536,31 +11458,31 @@
 			line_color 	3342489
 			quidu      	"5DE5445F01C5"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$75" @530
-				Parent_View 	@529
+			    (object RoleView "$UNNAMED$75" @526
+				Parent_View 	@525
 				location   	(260, -19)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE544600010"
-				client     	@529
-				supplier   	@516
+				client     	@525
+				supplier   	@514
 				vertices   	(list Points
 				    (1605, 929)
-				    (1802, 912))
+				    (1801, 913))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$76" @531
-				Parent_View 	@529
+			    (object RoleView "$UNNAMED$76" @527
+				Parent_View 	@525
 				location   	(260, -19)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE544600012"
-				client     	@529
-				supplier   	@522
+				client     	@525
+				supplier   	@518
 				vertices   	(list Points
 				    (1605, 929)
-				    (1409, 944))
+				    (1409, 946))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$77" @532
+		    (object AssociationViewNew "$UNNAMED$77" @528
 			location   	(1588, 1140)
 			font       	(object Font
 			    size       	10
@@ -11575,31 +11497,31 @@
 			line_color 	3342489
 			quidu      	"5DE54461037B"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$78" @533
-				Parent_View 	@532
+			    (object RoleView "$UNNAMED$78" @529
+				Parent_View 	@528
 				location   	(243, 192)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE544620204"
-				client     	@532
-				supplier   	@519
+				client     	@528
+				supplier   	@515
 				vertices   	(list Points
 				    (1588, 1140)
-				    (1770, 1261))
+				    (1768, 1259))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$79" @534
-				Parent_View 	@532
+			    (object RoleView "$UNNAMED$79" @530
+				Parent_View 	@528
 				location   	(243, 192)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE544620206"
-				client     	@532
-				supplier   	@522
+				client     	@528
+				supplier   	@518
 				vertices   	(list Points
 				    (1588, 1140)
 				    (1409, 1021))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$80" @535
+		    (object AssociationViewNew "$UNNAMED$80" @531
 			location   	(1293, 1318)
 			font       	(object Font
 			    size       	10
@@ -11614,31 +11536,31 @@
 			line_color 	3342489
 			quidu      	"5DE5446401D5"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$81" @536
-				Parent_View 	@535
+			    (object RoleView "$UNNAMED$81" @532
+				Parent_View 	@531
 				location   	(-52, 370)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE54465006D"
-				client     	@535
-				supplier   	@520
+				client     	@531
+				supplier   	@516
 				vertices   	(list Points
 				    (1293, 1318)
-				    (1288, 1445))
+				    (1288, 1446))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$82" @537
-				Parent_View 	@535
+			    (object RoleView "$UNNAMED$82" @533
+				Parent_View 	@531
 				location   	(-52, 370)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE54465006F"
-				client     	@535
-				supplier   	@522
+				client     	@531
+				supplier   	@518
 				vertices   	(list Points
 				    (1293, 1318)
-				    (1296, 1191))
+				    (1298, 1191))
 				line_style 	0)))
-		    (object AssociationViewNew "$UNNAMED$83" @538
+		    (object AssociationViewNew "$UNNAMED$83" @534
 			location   	(1013, 1078)
 			font       	(object Font
 			    size       	10
@@ -11653,69 +11575,30 @@
 			line_color 	3342489
 			quidu      	"5DE549B6031D"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$84" @539
-				Parent_View 	@538
+			    (object RoleView "$UNNAMED$84" @535
+				Parent_View 	@534
 				location   	(-313, 99)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE549B70223"
-				client     	@538
-				supplier   	@521
+				client     	@534
+				supplier   	@517
 				vertices   	(list Points
 				    (1013, 1078)
-				    (816, 1157))
+				    (816, 1160))
 				line_style 	0)
-			    (object RoleView "$UNNAMED$85" @540
-				Parent_View 	@538
+			    (object RoleView "$UNNAMED$85" @536
+				Parent_View 	@534
 				location   	(-313, 99)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5DE549B70225"
-				client     	@538
-				supplier   	@522
+				client     	@534
+				supplier   	@518
 				vertices   	(list Points
 				    (1013, 1078)
-				    (1211, 995))
-				line_style 	0)))
-		    (object DependencyView "" @541
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			stereotype 	(object SegLabel @542
-			    Parent_View 	@541
-			    location   	(571, 964)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    anchor     	10
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	450
-			    justify    	0
-			    label      	"<<extend>>"
-			    pctDist    	0.553577
-			    height     	127
-			    orientation 	1)
-			line_color 	3342489
-			quidu      	"5DE54DBB01D5"
-			client     	@512
-			supplier   	@521
-			vertices   	(list Points
-			    (721, 797)
-			    (675, 1129))
-			line_style 	0)))))
+				    (1210, 996))
+				line_style 	0)))))))
     root_category 	(object Class_Category "Logical View"
 	quid       	"5DE54313033D"
 	exportControl 	"Public"

@@ -43,7 +43,7 @@ namespace DAL
                 dataContext.SubmitChanges();
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }
