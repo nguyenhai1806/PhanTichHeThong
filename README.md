@@ -20,14 +20,14 @@ Phần mềm làm nhiệm vụ nhập học cho học sinh lớp 10 và phân l�
 
 ## Công nghệ
 
-**Công cụ**:  Rational Rose, Visual studio 2019, SQL Server 2014
-**Ngôn ngữ**: CShap, SQL
-**Entity Framework**: LINQ TO SQL CLASSES
-**CSDL**:     SQL Server
+* **Công cụ**:  Rational Rose, Visual studio 2019, SQL Server 2014
+* **Ngôn ngữ**: CShap, SQL
+* **Entity Framework**: LINQ TO SQL CLASSES
+* **CSDL**:     SQL Server
 
 ## Cài đặt
 * Chạy scripSQL trên SQL Server
-* Đổi :đổi connecttionString trong appconfig
+* Đổi connectionString trong appconfig
 * Tài khoản, mật khẩu : nguyenhai
 
 ## Nhóm phát triển
