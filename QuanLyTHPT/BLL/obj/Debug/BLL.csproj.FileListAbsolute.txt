@@ -11,7 +11,6 @@ D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.dll
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.pdb
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Template\Bieu_Mau_Bien_Nhan_HS.doc
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Aspose.Words.dll
 D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Template\BieuMauXacNhanNhapHoc.doc
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
@@ -29,3 +28,5 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\bin\Deb
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.dll
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\BLL\obj\Debug\BLL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\BLL\bin\Debug\Newtonsoft.Json.xml

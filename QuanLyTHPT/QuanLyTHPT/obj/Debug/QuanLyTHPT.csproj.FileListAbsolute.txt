@@ -46,3 +46,5 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.exe
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\obj\Debug\QuanLyTHPT.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Newtonsoft.Json.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\QuanLyTHPT\bin\Debug\Newtonsoft.Json.xml
