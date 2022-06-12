@@ -71,10 +71,6 @@ namespace QuanLyTHPT
             {
                 item.Enabled = trangThai;
             }
-            foreach (Control item in panelIN.Controls)
-            {
-                item.Enabled = trangThai;
-            }
             btnInPhieuBienNhan.Enabled = false;
         }
         private void ResetControls()
@@ -95,13 +91,6 @@ namespace QuanLyTHPT
                     (item as ComboBox).SelectedIndex = 0;
                 }
                 else 
-                    item.Text = null;
-            }
-            foreach (Control item in panelIN.Controls)
-            {
-                if (item is Button || item is Label)
-                    continue;
-                else
                     item.Text = null;
             }
             foreach (Control item in groupBoxKiemTra.Controls)
@@ -379,6 +368,11 @@ namespace QuanLyTHPT
         private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
