@@ -379,11 +379,13 @@ GO
 -----------------------------------------------------------------------------
 -----------------------------------------------------------------------------
 
---EXEC PROC_DeleteDuLieuNhapHoc
---GO
+EXEC PROC_DeleteDuLieuNhapHoc
+GO
 
---EXEC PROC_CreateDataNhapHoc
---GO
+EXEC PROC_CreateDataNhapHoc
+GO
 
---EXEC PROC_XemKetQuaPhanLop
---GO
+EXEC PROC_XemKetQuaPhanLop
+GO
+
+SELECT * FROM HOCSINH

@@ -30,16 +30,8 @@ namespace QuanLyTHPT
             frmLogin.progressBar.Value = 80;
             loadTinh();
             frmLogin.progressBar.Value = 90;
-            EniableControls(false);
+            DisableControls();
             frmLogin.progressBar.Value = 100;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmDanhSachUngTuyen frmDanhSachUngTuyen = new frmDanhSachUngTuyen();
-            frmDanhSachUngTuyen.ShowDialog();
-            txtCCCDFind.Text = frmDanhSachUngTuyen.result;
-            txtCCCDFind.Focus();
         }
 
         private void LoadHoSo()
@@ -61,17 +53,33 @@ namespace QuanLyTHPT
             cbbTinh.DisplayMember = "name";
             cbbTinh.ValueMember = "code";
         }
-        private void EniableControls(bool trangThai)
+        private void EniableControls()
         {
             foreach (Control item in groupBienNhanHS.Controls)
             {
-                item.Enabled = trangThai;
+                item.Enabled = true;
             }
             foreach (Control item in groupBoxThongTinHS.Controls)
             {
-                item.Enabled = trangThai;
+                item.Enabled = true;
             }
+            btnInGiayXacNhan.Enabled = true;
             btnInPhieuBienNhan.Enabled = false;
+            btnReset.Enabled = true;
+        }
+        private void DisableControls()
+        {
+            foreach (Control item in groupBienNhanHS.Controls)
+            {
+                item.Enabled = false;
+            }
+            foreach (Control item in groupBoxThongTinHS.Controls)
+            {
+                item.Enabled = false;
+            }
+            btnInGiayXacNhan.Enabled = false;
+            btnInPhieuBienNhan.Enabled = false;
+            btnReset.Enabled = true;
         }
         private void ResetControls()
         {
@@ -133,7 +141,7 @@ namespace QuanLyTHPT
                 {
                     if (!HocSinhBLL.Instance.HocSinhDaNhapHoc(thiSinh.CCCD))
                     {
-                        EniableControls(true);
+                        EniableControls();
                         hocSinh = HocSinhBLL.Instance.ThiSinhToHocSinh(thiSinh);
                         FillHocSinhToControl();
                         LoadHoSo();
@@ -146,7 +154,7 @@ namespace QuanLyTHPT
                 else
                 {
                     MyMessageBox.ShowError("Không tìm thấy thí sinh");
-                    EniableControls(false);
+                    DisableControls();
                     ResetControls();
                     hocSinh = null;
                 }
@@ -162,12 +170,6 @@ namespace QuanLyTHPT
             // only allow one decimal point
             if (txtCCCDFind.Text.Length >= 13 && !char.IsControl(e.KeyChar))
                 e.Handled = true;
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            EniableControls(false);
-            ResetControls();
         }
 
         private void dataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -370,9 +372,18 @@ namespace QuanLyTHPT
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        private void btnTimTrongDS_Click(object sender, EventArgs e)
         {
+            frmDanhSachUngTuyen frmDanhSachUngTuyen = new frmDanhSachUngTuyen();
+            frmDanhSachUngTuyen.ShowDialog();
+            txtCCCDFind.Text = frmDanhSachUngTuyen.result;
+            txtCCCDFind.Focus();
+        }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetControls();
+            DisableControls();
         }
     }
 }
