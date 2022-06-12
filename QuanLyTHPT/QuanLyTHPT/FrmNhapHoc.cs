@@ -385,5 +385,24 @@ namespace QuanLyTHPT
             ResetControls();
             DisableControls();
         }
+
+        private void frmNhapHoc_Load(object sender, EventArgs e)
+        {
+            KeyPreview = true;
+        }
+        private void frmNhapHoc_KeyDown(object sender, KeyEventArgs e)
+        {
+            Keys key = e.KeyCode;
+            if (key == Keys.F11)
+            {
+                FullScreen fsc = new FullScreen();
+                fsc.EnterFullScreenMode(this);
+            }
+            else if(key == Keys.Escape)
+            {
+                FullScreen fsc = new FullScreen();
+                fsc.LeaveFullScreenMode(this);
+            }    
+        }
     }
 }

@@ -1170,6 +1170,8 @@ namespace QuanLyTHPT
             this.Name = "frmNhapHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập học THCS";
+            this.Load += new System.EventHandler(this.frmNhapHoc_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmNhapHoc_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);

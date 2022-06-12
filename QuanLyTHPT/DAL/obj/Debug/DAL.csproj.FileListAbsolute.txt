@@ -1,13 +1,3 @@
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.dll
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.pdb
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.dll
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.pdb
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.dll
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.pdb
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.dll.config
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
-D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.dll
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.pdb
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.dll
@@ -18,3 +8,13 @@ C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\obj\Deb
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.dll
 C:\Users\nguye\Source\Repos\nguyenhai1806\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DAL.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.pdb
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\bin\Debug\DTO.dll.config
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.dll
+D:\Project\DoAn\PhanTichHeThong\QuanLyTHPT\DAL\obj\Debug\DAL.pdb

@@ -67,6 +67,7 @@
     <Compile Include="FrmNhapHoc.Designer.cs">
       <DependentUpon>FrmNhapHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FullScreen.cs" />
     <Compile Include="MyMessageBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
