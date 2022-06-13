@@ -229,13 +229,18 @@ namespace QuanLyTHPT
                     hoSo_s.Add(hoSo_PP);
                 }
             }
-            if (PhieuBienNhanHoSoBLL.Instance.ThemPhieuBienNhan(hocSinh, nhanVien, hoSo_s))
+            if (hoSo_s.Count > 0)
             {
-                Export export = new Export();
-                export.XuatBienNhanHoSo(hocSinh, nhanVien, hoSo_s);
+                if (PhieuBienNhanHoSoBLL.Instance.ThemPhieuBienNhan(hocSinh, nhanVien, hoSo_s))
+                {
+                    Export export = new Export();
+                    export.XuatBienNhanHoSo(hocSinh, nhanVien, hoSo_s);
+                }
+                else
+                    MyMessageBox.ShowError("Loi them phieu bien nhan");
             }
             else
-                MyMessageBox.ShowError("Loi them phieu bien nhan");
+                MyMessageBox.ShowError("Chưa ghi nhận hồ sơ");
         }
         private void CapNhapThongTinHocSinh()
         {
