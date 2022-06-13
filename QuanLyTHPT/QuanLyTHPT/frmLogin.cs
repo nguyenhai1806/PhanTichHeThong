@@ -42,5 +42,10 @@ namespace QuanLyTHPT
             else
                 MyMessageBox.ShowError("Không được để trống");
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
