@@ -409,5 +409,34 @@ namespace QuanLyTHPT
                 fsc.LeaveFullScreenMode(this);
             }    
         }
+
+        private void btnTimTS_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrWhiteSpace(txtCCCDFind.Text))
+            {
+                DSTrungTuyen thiSinh = ThiSinhTrungTuyenBLL.Instance.layThiSinhTheoCCCD(txtCCCDFind.Text);
+                if (thiSinh != null)
+                {
+                    if (!HocSinhBLL.Instance.HocSinhDaNhapHoc(thiSinh.CCCD))
+                    {
+                        EniableControls();
+                        hocSinh = HocSinhBLL.Instance.ThiSinhToHocSinh(thiSinh);
+                        FillHocSinhToControl();
+                        LoadHoSo();
+                    }
+                    else
+                    {
+                        MyMessageBox.ShowError("Thi sinh nay da nhap học");
+                    }
+                }
+                else
+                {
+                    MyMessageBox.ShowError("Không tìm thấy thí sinh");
+                    DisableControls();
+                    ResetControls();
+                    hocSinh = null;
+                }
+            }
+        }
     }
 }

@@ -105,6 +105,7 @@ namespace QuanLyTHPT
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPhanLop = new System.Windows.Forms.Button();
             this.lblNhanVien = new System.Windows.Forms.Label();
+            this.btnTimTS = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -202,6 +203,7 @@ namespace QuanLyTHPT
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxKiemTra.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBoxKiemTra.Controls.Add(this.btnTimTS);
             this.groupBoxKiemTra.Controls.Add(this.btnTimTrongDS);
             this.groupBoxKiemTra.Controls.Add(this.label2);
             this.groupBoxKiemTra.Controls.Add(this.txtCCCDFind);
@@ -221,7 +223,7 @@ namespace QuanLyTHPT
             this.btnTimTrongDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimTrongDS.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTrongDS.Image")));
             this.btnTimTrongDS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimTrongDS.Location = new System.Drawing.Point(68, 80);
+            this.btnTimTrongDS.Location = new System.Drawing.Point(67, 111);
             this.btnTimTrongDS.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimTrongDS.Name = "btnTimTrongDS";
             this.btnTimTrongDS.Size = new System.Drawing.Size(194, 30);
@@ -247,7 +249,7 @@ namespace QuanLyTHPT
             this.txtCCCDFind.Location = new System.Drawing.Point(68, 45);
             this.txtCCCDFind.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCDFind.Name = "txtCCCDFind";
-            this.txtCCCDFind.Size = new System.Drawing.Size(194, 23);
+            this.txtCCCDFind.Size = new System.Drawing.Size(193, 23);
             this.txtCCCDFind.TabIndex = 1;
             this.txtCCCDFind.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCCCDFind_KeyPress);
             this.txtCCCDFind.Leave += new System.EventHandler(this.txtCCCDFind_Leave);
@@ -1158,6 +1160,19 @@ namespace QuanLyTHPT
             this.lblNhanVien.TabIndex = 12;
             this.lblNhanVien.Text = "Chào Nguyễn Duy Hải  - NV001";
             // 
+            // btnTimTS
+            // 
+            this.btnTimTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimTS.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTS.Image")));
+            this.btnTimTS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimTS.Location = new System.Drawing.Point(69, 76);
+            this.btnTimTS.Name = "btnTimTS";
+            this.btnTimTS.Size = new System.Drawing.Size(192, 30);
+            this.btnTimTS.TabIndex = 3;
+            this.btnTimTS.Text = "Tìm thí sinh";
+            this.btnTimTS.UseVisualStyleBackColor = true;
+            this.btnTimTS.Click += new System.EventHandler(this.btnTimTS_Click);
+            // 
             // frmNhapHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1286,6 +1301,7 @@ namespace QuanLyTHPT
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.Button btnTimTS;
     }
 }
 
