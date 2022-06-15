@@ -11,7 +11,7 @@ namespace DTO
         string name, codename, division_type, short_codename;
         int code, phone_code;
 
-        public string Name { get => name; set { name = Encoding.UTF8.GetString(Encoding.Default.GetBytes(value)); } }
+        public string Name { get => name; set { name = value; } }
         public string Codename { get => codename; set => codename = value; }
         public string Division_type { get => division_type; set => division_type = value; }
         public int Code { get => code; set => code = value; }

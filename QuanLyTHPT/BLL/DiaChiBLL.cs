@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -31,10 +32,12 @@ namespace BLL
         }
         public List<Tinh> getData()
         {
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            WebClient client = new WebClient();
-            string json = client.DownloadString("https://provinces.open-api.vn/api/?depth=3");
+            //ServicePointManager.Expect100Continue = true;
+            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            //WebClient client = new WebClient();
+            //string json = client.DownloadString("https://provinces.open-api.vn/api/?depth=3");
+            StreamReader r = new StreamReader("dataAddress.json");
+            string json = r.ReadToEnd();
             List<Tinh> tinhs = JsonConvert.DeserializeObject<List<Tinh>>(json);
             return tinhs;
         }

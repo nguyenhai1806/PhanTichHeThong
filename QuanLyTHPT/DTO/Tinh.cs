@@ -20,7 +20,7 @@ namespace DTO
             get { return name; }
             set
             {
-                name = Encoding.UTF8.GetString(Encoding.Default.GetBytes(value));
+                name = value;
             }
         }
         public int Code { get => code; set => code = value; }

@@ -80,6 +80,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="dataAddress.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Template\BieuMauXacNhanNhapHoc.doc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
